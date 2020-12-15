@@ -4,5 +4,4 @@ def new_in_list(my_list, idx, element):
         list = my_list.copy()
         if 0 <= idx < len(my_list) - 1:
             list[idx] = element
-            return (list)
         return (list)
