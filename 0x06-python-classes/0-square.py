@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """
-Square class - square class
+Class project - square class
 """
 
 
