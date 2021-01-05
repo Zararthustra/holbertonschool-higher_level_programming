@@ -2,6 +2,8 @@
 """
 Square class - square class
 """
+
+
 class Square:
     """
     Empty class
