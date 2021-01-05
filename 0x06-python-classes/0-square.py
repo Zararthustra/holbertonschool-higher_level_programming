@@ -1,4 +1,9 @@
 #!/usr/bin/python3
+"""
+Square class - square class
+"""
 class Square:
-    def __init__(self):
+    """
+    Empty class
+    """
         pass
