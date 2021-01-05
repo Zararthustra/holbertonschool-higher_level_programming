@@ -2,6 +2,8 @@
 """
 Class project - square class
 """
+
+
 class Square:
     """
     Square Class
