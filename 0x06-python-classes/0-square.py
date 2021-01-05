@@ -6,4 +6,4 @@ class Square:
     """
     Empty class
     """
-        pass
+    pass
