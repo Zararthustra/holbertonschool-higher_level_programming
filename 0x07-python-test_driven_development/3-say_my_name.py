@@ -7,9 +7,9 @@ say_my_name - Prints "my name is <first name> <last name>"
 def say_my_name(first_name, last_name=""):
     """
     Prints first and last name
-    	args:
-	    first_name: first name
-	    last_name: last name
+        args:
+            first_name: first name
+            last_name: last name
     """
     if type(first_name) is not str:
         raise TypeError("first_name must be a string")

@@ -14,7 +14,6 @@ class TestMaxInteger(unittest.TestCase):
         self.assertAlmostEqual(max_integer([3]), 3)
         self.assertAlmostEqual(max_integer([]), None)
 
-
     def tests_fail(self):
         """tests that have to fail"""
         self.assertRaises(TypeError, max_integer, [0, 1, "string", 3])
