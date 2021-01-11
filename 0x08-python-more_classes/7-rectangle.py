@@ -11,7 +11,7 @@ class Rectangle:
     number_of_instances = 0
     print_symbol = "#"
 
-    def __init__(self, width=0, height=0):
+    def __init__(self, width=0, height=0, print_symbol='#'):
         """
         constructor
             args:
@@ -20,6 +20,7 @@ class Rectangle:
         """
         self.__width = width
         self.__height = height
+        self.print_symbol = Rectangle.print_symbol
         Rectangle.number_of_instances += 1
 
     def __str__(self):
@@ -33,7 +34,7 @@ class Rectangle:
         else:
             for i in range(self.height):
                 for j in range(self.width):
-                    string += str(Rectangle.print_symbol)
+                    string += str(self.print_symbol)
                 if i != self.height - 1:
                     string += '\n'
             return string
