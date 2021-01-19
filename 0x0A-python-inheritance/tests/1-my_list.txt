@@ -1,0 +1,23 @@
+The ``1-my_list`` module
+========================
+
+Using ``MyList``
+-----------------
+
+Import:
+	>>> MyList = __import__('1-my_list').MyList
+
+Try/Expect:
+	>>> MyList([-1, 0, 52, 5, -221]).print_sorted()
+	[-221, -1, 0, 5, 52]
+
+	>>> MyList(['c', 'a', 'b']).print_sorted()
+	['a', 'b', 'c']
+
+	>>> MyList().print_sorted()
+	[]
+
+	>>> MyList([9, 'c', 8]).print_sorted()
+	Traceback (most recent call last):
+	...
+	TypeError: unorderable types: str() < int()
