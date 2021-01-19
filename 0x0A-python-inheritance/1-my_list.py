@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """
-MyList class module
+geometry class and sublclass
 """
 
 
