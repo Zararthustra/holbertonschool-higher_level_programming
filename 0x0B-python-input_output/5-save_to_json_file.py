@@ -1,16 +1,15 @@
 #!/usr/bin/python3
-"""save to json file module
+"""save object to json file module
 """
 import json
 
 
 def save_to_json_file(my_obj, filename):
     """
-    object string to json saved into a file
+    object to json saved into a file
         args:
-            my_obj: string
+            my_obj: object
             filename: json file
     """
-    obj = json.dumps(my_obj)
     with open(filename, mode="w", encoding="utf-8") as myFile:
-        myFile.write(obj)
+        json.dump(my_obj, myFile)
