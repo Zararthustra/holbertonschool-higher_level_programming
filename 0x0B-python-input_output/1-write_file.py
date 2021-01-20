@@ -1,0 +1,7 @@
+#!/usr/bin/python3
+
+
+def write_file(filename="", text=""):
+    with open(filename, mode="w", encoding="utf-8") as myFile:
+        char_num = myFile.write(text)
+        return char_num
