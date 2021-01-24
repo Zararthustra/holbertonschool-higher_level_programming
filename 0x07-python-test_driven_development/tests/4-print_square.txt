@@ -22,7 +22,7 @@ Try/Expect:
 
 	>>> print_square("string")
 	Traceback (most recent call last):
-	TypeError: unorderable types: str() < int()
+	TypeError: size must be an integer
 
 	>>> print_square(-4.7)
 	Traceback (most recent call last):
