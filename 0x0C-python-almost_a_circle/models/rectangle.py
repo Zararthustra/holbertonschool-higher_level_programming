@@ -42,6 +42,9 @@ class Rectangle(Base):
     def update(self, *args, **kwargs):
         """
         assigns an argument to each attribute
+            args:
+                *args: arguments
+                **kwargs: arguments
         """
         attributes = ["id", "width", "height", "x", "y"]
         if args:
@@ -94,6 +97,8 @@ class Rectangle(Base):
     def width(self, value):
         """
         width setter
+            args:
+                value: value to set
         """
         if type(value) is not int:
             raise TypeError("width must be an integer")
@@ -113,6 +118,8 @@ class Rectangle(Base):
     def height(self, value):
         """
         height setter
+            args:
+                value: value to set
         """
         if type(value) is not int:
             raise TypeError("height must be an integer")
@@ -132,6 +139,8 @@ class Rectangle(Base):
     def x(self, value):
         """
         x setter
+            args:
+                value: value to set
         """
         if type(value) is not int:
             raise TypeError("x must be an integer")
@@ -151,6 +160,8 @@ class Rectangle(Base):
     def y(self, value):
         """
         y setter
+            args:
+                value: value to set
         """
         if type(value) is not int:
             raise TypeError("y must be an integer")
