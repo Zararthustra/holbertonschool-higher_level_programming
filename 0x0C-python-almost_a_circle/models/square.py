@@ -21,6 +21,31 @@ class Square(Rectangle):
         """
         super().__init__(size, size, x, y, id)
 
+    def to_dictionary(self):
+        """
+        returns the dictionary representation of [Square]
+        """
+        dic = {
+            "id": self.id,
+            "size": self.size,
+            "x": self.x,
+            "y": self.y
+        }
+        return dic
+
+    def update(self, *args, **kwargs):
+        """
+        assigns attributes
+        """
+        attributes = ["id", "size", "x", "y"]
+        if args:
+            for i in range(len(args)):
+                setattr(self, attributes[i], args[i])
+        else:
+            for key in kwargs.keys():
+                if key in attributes:
+                    setattr(self, key, kwargs[key])
+
     def __str__(self):
         """
         str magic method

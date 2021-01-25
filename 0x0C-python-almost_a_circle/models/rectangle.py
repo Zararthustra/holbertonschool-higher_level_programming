@@ -26,6 +26,19 @@ class Rectangle(Base):
         self.y = y
         super().__init__(id)
 
+    def to_dictionary(self):
+        """
+        returns the dictionary representation of [Rectangle]
+        """
+        dic = {
+            "id": self.id,
+            "width": self.width,
+            "height": self.height,
+            "x": self.x,
+            "y": self.y
+        }
+        return dic
+
     def update(self, *args, **kwargs):
         """
         assigns an argument to each attribute
@@ -34,7 +47,7 @@ class Rectangle(Base):
         if args:
             for i in range(len(args)):
                 setattr(self, attributes[i], args[i])
-        if kwargs:
+        else:
             for key in kwargs.keys():
                 if key in attributes:
                     setattr(self, key, kwargs[key])
