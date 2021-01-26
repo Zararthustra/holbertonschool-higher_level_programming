@@ -31,7 +31,7 @@ class Base:
                 dictionary (dict): attributes already set
         """
         if dictionary:
-            dummy_instance = cls(1, 9, 9, 2)
+            dummy_instance = cls(1, 1, 0, 0)
             dummy_instance.update(**dictionary)
             return dummy_instance
 
