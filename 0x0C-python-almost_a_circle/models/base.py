@@ -43,7 +43,7 @@ class Base:
             args:
                 json_string (str): [dict]
         """
-        if type(json_string) is not str or json_string is None:
+        if json_string is None:
             return "[]"
         else:
             return json.loads(json_string)
