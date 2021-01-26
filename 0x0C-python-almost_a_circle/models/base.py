@@ -43,11 +43,10 @@ class Base:
             args:
                 json_string (str): [dict]
         """
-        if json_string:
-            if type(json_string) is str:
-                return json.loads(json_string)
-        else:
+        if type(json_string) is not str or json is None:
             return "[]"
+        else:
+            return json.loads(json_string)
 
     @staticmethod
     def to_json_string(list_dictionaries):
