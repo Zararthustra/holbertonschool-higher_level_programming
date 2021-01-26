@@ -30,10 +30,12 @@ class Base:
             args:
                 dictionary (dict): attributes already set
         """
-        if dictionary:
+        if cls.__name__ == "Square":
+            dummy_instance = cls(1, 0, 0)
+        if cls.__name__ == "Rectangle":
             dummy_instance = cls(1, 1, 0, 0)
-            dummy_instance.update(**dictionary)
-            return dummy_instance
+        dummy_instance.update(**dictionary)
+        return dummy_instance
 
     @staticmethod
     def from_json_string(json_string):
