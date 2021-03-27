@@ -1,6 +1,10 @@
 #!/usr/bin/python3
 """
 script that lists all states from the database hbtn_0e_0_usa
+args:
+	username
+	password
+	name
 """
 
 import sys
@@ -19,3 +23,6 @@ if __name__ == "__main__":
     
     for row in query_rows:
         print(row)
+    
+    cur.close()
+    conn.close()
