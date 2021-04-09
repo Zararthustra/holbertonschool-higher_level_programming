@@ -11,8 +11,8 @@ if __name__ == "__main__":
     import sys
 
     data = {}
-    if len(argv) >= 2:
-        data['q'] = argv[1]
+    if len(sys.argv) >= 2:
+        data['q'] = sys.argv[1]
     else:
         data['q'] = ""
         r = requests.post('http://0.0.0.0:5000/search_user', data=data)
