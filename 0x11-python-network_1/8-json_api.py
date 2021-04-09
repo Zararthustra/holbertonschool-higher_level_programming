@@ -15,13 +15,12 @@ if __name__ == "__main__":
         data['q'] = sys.argv[1]
     else:
         data['q'] = ""
-        r = requests.post('http://0.0.0.0:5000/search_user', data=data)
-        try:
-            jstring = r.json()
-
-            if jstring == {}:
-                print("No result")
-            else:
-                print("[{}] {}".format(jstring['id'], jstring['name']))
-        except Exception as err:
-            print("Not a valid JSON")
+    r = requests.post('http://0.0.0.0:5000/search_user', data=data)
+    try:
+        jstring = r.json()
+        if jstring == {}:
+            print("No result")
+        else:
+            print("[{}] {}".format(jstring['id'], jstring['name']))
+    except Exception as err:
+        print("No result")
