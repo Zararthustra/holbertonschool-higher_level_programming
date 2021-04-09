@@ -10,7 +10,6 @@ if __name__ == "__main__":
     import requests
     import sys
 
-
     data = {}
     if len(argv) >= 2:
         data['q'] = argv[1]
@@ -19,7 +18,7 @@ if __name__ == "__main__":
         r = requests.post('http://0.0.0.0:5000/search_user', data=data)
         try:
             jstring = r.json()
-            
+
             if jstring == {}:
                 print("No result")
             else:

@@ -10,7 +10,6 @@ if __name__ == "__main__":
     import requests
     import sys
 
-
     r = requests.get(argv[1])
     status = r.status_code
     if status >= 400:
