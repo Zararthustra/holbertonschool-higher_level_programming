@@ -23,4 +23,4 @@ if __name__ == "__main__":
         else:
             print("[{}] {}".format(jstring['id'], jstring['name']))
     except Exception as err:
-        print("No result")
+        print("Not a valid JSON")
